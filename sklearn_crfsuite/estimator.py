@@ -273,6 +273,8 @@ class CRF(BaseEstimator):
         self.verbose = verbose
         self.trainer_cls = trainer_cls
         self.training_log_ = None
+        self.keep_tempfiles = keep_tempfiles
+        self.model_filename = model_filename
 
         self._tagger = None
         self._info_cached = None
